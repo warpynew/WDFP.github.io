@@ -5,7 +5,7 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Haking](./another-page.html)/
+[Haking](./Haking/Haking.html)/
 [Mathématiques](./Mathemathiques/Mathemathiques.html)/
 [Psychologie](./Psychologie/Psychologie.html)/
 [Bricolage](./Bricolage/Bricolage.html)/
