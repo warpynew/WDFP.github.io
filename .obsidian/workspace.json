@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "abe8496d17b07545",
+    "type": "split",
+    "children": [
+      {
+        "id": "cabbbe0a19a6dc36",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78d5e522a47bc506",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Haking/Haking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "212f13e8ac233723",
+    "type": "split",
+    "children": [
+      {
+        "id": "204904ff99981927",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0573525bbb6a7754",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "107b257b97e43600",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8806249d81c58938",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f3a2def45ff8ed42",
+    "type": "split",
+    "children": [
+      {
+        "id": "c3b17d250e087946",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f18976d27dd799de",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Haking/Haking.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2aae9f8f324080c9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Haking/Haking.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dfd08d5415d3ef25",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5269969b1d7801da",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Haking/Haking.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false
+    }
+  },
+  "active": "78d5e522a47bc506",
+  "lastOpenFiles": [
+    "Haking/élévation de privilèges/Linux/GTFOBins.md",
+    "index.md",
+    "Haking/Haking.md",
+    "thumbnail.png",
+    "README.md",
+    "docs/CODE_OF_CONDUCT.md",
+    "docs/SUPPORT.md",
+    "docs/CONTRIBUTING.md",
+    "Bricolage/Bricolage.md",
+    "Psychologie/Psychologie.md",
+    "assets/images/nav-bg.gif",
+    "assets/images/hr.gif",
+    "assets/images/bullet.png",
+    "assets/fonts/OpenSans-SemiboldItalic-webfont.svg",
+    "assets/fonts/OpenSans-Semibold-webfont.svg",
+    "assets/fonts/OpenSans-Regular-webfont.svg",
+    "assets/fonts/OpenSans-Light-webfont.svg",
+    "assets/fonts/OpenSans-Italic-webfont.svg",
+    "assets/fonts/OpenSans-BoldItalic-webfont.svg",
+    "another-page.md"
+  ]
+}

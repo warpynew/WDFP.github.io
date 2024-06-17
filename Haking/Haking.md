@@ -1,4 +1,7 @@
 ---
 layout: default
 ---
+
 [back](../)
+
+[[GTFOBins]]
