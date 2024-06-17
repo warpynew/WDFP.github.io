@@ -4,4 +4,4 @@ layout: default
 
 [back](../)
 
-[GTFOBins](GTFOBins)
+[GTFOBins](./ele_priv/Linux/GTFOBins.html)
