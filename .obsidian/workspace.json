@@ -149,8 +149,9 @@
   "active": "78d5e522a47bc506",
   "lastOpenFiles": [
     "Haking/élévation de privilèges/Linux/GTFOBins.md",
-    "index.md",
+    "another-page.md",
     "Haking/Haking.md",
+    "index.md",
     "thumbnail.png",
     "README.md",
     "docs/CODE_OF_CONDUCT.md",
@@ -166,7 +167,6 @@
     "assets/fonts/OpenSans-Regular-webfont.svg",
     "assets/fonts/OpenSans-Light-webfont.svg",
     "assets/fonts/OpenSans-Italic-webfont.svg",
-    "assets/fonts/OpenSans-BoldItalic-webfont.svg",
-    "another-page.md"
+    "assets/fonts/OpenSans-BoldItalic-webfont.svg"
   ]
 }
