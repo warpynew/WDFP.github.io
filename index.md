@@ -2,16 +2,17 @@
 title: Menu
 layout: default
 ---
-## Articles
-
 ---
+## Articles
+---
+
 ```shell
 Machine blue
 ```
-difficulté : 
-- **easy**
-connaissances :
-- OSINT
-- Metasploit
-- CVE-2017-0143
----
+> difficulté : 
+> - **easy**
+>connaissances :
+> - OSINT
+> - Metasploit
+> - CVE-2017-0143
+
