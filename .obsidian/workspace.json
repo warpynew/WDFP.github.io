@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Haking/ele_priv/Linux/GTFOBins.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Haking/ele_priv/Linux/GTFOBins.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Haking/ele_priv/Linux/GTFOBins.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Haking/ele_priv/Linux/GTFOBins.md"
+                "file": "index.md"
               }
             }
           }
@@ -148,12 +148,18 @@
   },
   "active": "78d5e522a47bc506",
   "lastOpenFiles": [
-    "ele_priv/Linux/GTFOBins.html.md",
-    "Haking/ele_priv/Linux/GTFOBins.md",
+    "Articles/Machines/Blue.md",
+    "images",
+    "images/Pasted image 20240621113501.png",
+    "index.md",
+    "Articles/Machines/Blue",
+    "Articles/Machines",
+    "Articles",
     "Haking/Haking.md",
+    "Haking/ele_priv/Linux/GTFOBins.md",
+    "ele_priv/Linux/GTFOBins.html.md",
     "ele_priv/Linux",
     "ele_priv",
-    "index.md",
     "README.md",
     "Haking/ele_priv/Windows",
     "Haking/ele_priv/Linux",
@@ -173,7 +179,6 @@
     "assets/fonts/OpenSans-Semibold-webfont.svg",
     "assets/fonts/OpenSans-Regular-webfont.svg",
     "assets/fonts/OpenSans-Light-webfont.svg",
-    "assets/fonts/OpenSans-Italic-webfont.svg",
-    "assets/fonts/OpenSans-BoldItalic-webfont.svg"
+    "assets/fonts/OpenSans-Italic-webfont.svg"
   ]
 }
