@@ -5,7 +5,7 @@ layout: default
 ## Articles
 ---
 <div>
-<h3 class="background-color">Machine blue</h3>
+<h3 class="titre_article3">Machine blue</h3>
 
 > difficulté : 
 > - **easy**
